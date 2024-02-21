@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.remote.command import Command
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-from bs4 import BeautifulSoup as bs
-from lxml import etree
+# from bs4 import BeautifulSoup as bs
+# from lxml import etree
 import time
 
 input_element = "/html/body/div[1]/div[1]/div[3]/div/div[1]/div/main/div[2]/nav/div/div[2]/div/div/div[1]/section/div/div[2]/div[1]/section/div/div[1]/d-textarea/div[1]"
@@ -37,15 +37,15 @@ class Scraper():
         return text
 
     # Not used
-    def get_by_xpath(self, xpath):
-        try:
-            html = self.driver.page_source
-            soup = bs(html, "lxml")
-            dom = etree.HTML(str(soup))
-            result = dom.xpath(f'{xpath}')[0].text
-            return result
-        except Exception as e:
-            return f'Error: {e}'
+    # def get_by_xpath(self, xpath):
+    #     try:
+    #         html = self.driver.page_source
+    #         soup = bs(html, "lxml")
+    #         dom = etree.HTML(str(soup))
+    #         result = dom.xpath(f'{xpath}')[0].text
+    #         return result
+    #     except Exception as e:
+    #         return f'Error: {e}'
 
     def quit(self):
         self.driver.close()
