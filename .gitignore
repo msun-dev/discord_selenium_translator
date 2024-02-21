@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 *.log
 settings.yaml
+_settings.yaml
