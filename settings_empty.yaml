@@ -1,0 +1,4 @@
+TOKEN: Your token goes here
+channel_from: Channel ID that you want to transalte
+channel_to: Channel ID where bot post your translations
+admin_id: id of user to translate
