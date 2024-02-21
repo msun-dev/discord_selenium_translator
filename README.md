@@ -2,7 +2,7 @@
 
 ## About
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Bot that will transalte only your essages to specific channel. Uses selenium for parsing.
 
 ## Installing
 
